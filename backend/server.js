@@ -5,9 +5,7 @@ const AWS = require('aws-sdk');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 5000;
-AWS.config.update({ region: 'ap-south-1' }); 
-const dynamoDb = new AWS.DynamoDB.DocumentClient();
-const TABLE_NAME = 'student_production_db';
+require('dotenv').config();
 app.use(cors());
 app.use(bodyParser.json());
 app.get('/users', async (req, res) => {
