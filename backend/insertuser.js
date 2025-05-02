@@ -16,7 +16,7 @@ const newUser = {
   TableName: "student_production_db",
   Item: {
     userId: "user123",
-    email: "arun.com",
+    email: "arun@gmail.com",
     firstName: "Arun",
     lastName: "Kumar",
     category: "Technology",
